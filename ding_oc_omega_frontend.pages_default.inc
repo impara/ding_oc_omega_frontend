@@ -1366,8 +1366,8 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
       'args' => '',
       'url' => '',
       'display' => 'ctools_context_teaser_list',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Nyheder',
     );
     $pane->cache = array(
       'method' => 'rules',
@@ -1388,8 +1388,8 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     $pane = new stdClass;
     $pane->pid = 'new-2';
     $pane->panel = 'middle';
-    $pane->type = 'ting_search';
-    $pane->subtype = 'ting_search';
+    $pane->type = 'carousel';
+    $pane->subtype = 'carousel';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -1425,8 +1425,8 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
       'args' => '',
       'url' => 'events',
       'display' => 'ctools_context_teaser_list',
-      'override_title' => 0,
-      'override_title_text' => 'Calendar',
+      'override_title' => 1,
+      'override_title_text' => 'Arrangementer',
     );
     $pane->cache = array(
       'method' => 'rules',
