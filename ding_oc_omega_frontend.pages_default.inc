@@ -1336,10 +1336,22 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
       'right' => NULL,
       'bottom' => NULL,
       'middle' => NULL,
-      'left_above' => NULL,
-      'right_above' => NULL,
+      'left_above' => array(
+        'region_title' => 'Nyheder',
+        'region_collapsed' => 1,
+      ),
+      'right_above' => array(
+        'region_title' => 'Arrangementer',
+        'region_collapsed' => 1,
+      ),
       'left_below' => NULL,
       'right_below' => NULL,
+    ),
+    'left_above' => array(
+      'style' => 'collapsible',
+    ),
+    'right_above' => array(
+      'style' => 'collapsible',
     ),
   );
   $display->cache = array();
@@ -1367,7 +1379,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
       'url' => '',
       'display' => 'ctools_context_teaser_list',
       'override_title' => 1,
-      'override_title_text' => 'Nyheder',
+      'override_title_text' => '',
     );
     $pane->cache = array(
       'method' => 'rules',
@@ -1426,7 +1438,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
       'url' => 'events',
       'display' => 'ctools_context_teaser_list',
       'override_title' => 1,
-      'override_title_text' => 'Arrangementer',
+      'override_title_text' => '',
     );
     $pane->cache = array(
       'method' => 'rules',
