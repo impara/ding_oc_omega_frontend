@@ -1,0 +1,42 @@
+<?php
+/**
+ * @file
+ * Code for the Ding Omega Frontend feature.
+ */
+
+include_once 'ding_oc_omega_frontend.features.inc';
+
+/**
+ * Implements hook_page_manager_load_task_handlers_alter().
+ *
+ * When page manager loads task handlers for pages we remove the page handlers
+ * that are handled by features in this module.
+ *
+ * Requires a patch to ctools/page_manager.module (call drupal_alter).
+ */
+function ding_oc_omega_frontend_page_manager_load_task_handlers_alter(&$handlers, $task, $subtask_id = NULL) {
+  // If we are on an admin/structure/features* page or we are being called
+  // through drush features we will filter out page handlers.
+  $in_drush_features = FALSE;
+
+  if (function_exists('drush_get_command')) {
+    $command = drush_get_command();
+    if (isset($command['drupal dependencies']) && in_array('features', $command['drupal dependencies'])) {
+      $in_drush_features = TRUE;
+    }
+  };
+
+  if (preg_match('/admin\/structure\/features/', $_GET['q']) || $in_drush_features) {
+    // Load the page handlers handled by this feature module.
+    $ding_oc_omega_frontend_handlers = array_keys(ding_oc_omega_frontend_default_page_manager_handlers());
+
+    if ($task['name'] == 'page') {
+      foreach ($handlers as $handler) {
+        if (in_array($handler->name, $ding_oc_omega_frontend_handlers)) {
+          unset($handlers[$handler->name]);
+        }
+      }
+    }
+  }
+}
+
