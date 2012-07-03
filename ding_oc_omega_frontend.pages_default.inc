@@ -91,7 +91,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
 <none>',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -312,7 +312,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
 <none>',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -494,7 +494,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display;
-  $display->layout = 'twocol_stacked';
+  $display->layout = 'omega_12_twocol_6_6_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -794,7 +794,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -974,7 +974,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
   <none>',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25_stacked';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -1155,7 +1155,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
   <none>',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -1515,7 +1515,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'twocol_stacked';
+  $display->layout = 'omega_12_twocol_6_6_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -1659,7 +1659,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25_stacked';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -1926,7 +1926,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
   <none>',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25_stacked';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2099,7 +2099,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
   news/%tid:name',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2289,7 +2289,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'twocol_stacked';
+  $display->layout = 'omega_12_twocol_6_6_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2327,7 +2327,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'twocol';
+  $display->layout = 'omega_12_twocol_6_6';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2432,7 +2432,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display;
-  $display->layout = 'twocol';
+  $display->layout = 'omega_12_twocol_6_6';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2578,7 +2578,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display;
-  $display->layout = 'twocol';
+  $display->layout = 'omega_12_twocol_6_6';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2684,7 +2684,7 @@ function ding_oc_omega_frontend_default_page_manager_handlers() {
     ),
   );
   $display = new panels_display;
-  $display->layout = 'twocol';
+  $display->layout = 'omega_12_twocol_6_6';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2820,7 +2820,7 @@ Website',
 search/node',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -2922,7 +2922,7 @@ search/ting
 ',
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -3180,7 +3180,7 @@ search/ting
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -3306,7 +3306,7 @@ search/ting
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'threecol_25_50_25';
+  $display->layout = 'omega_12_threecol_3_6_3';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -3452,13 +3452,15 @@ search/ting
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'twocol';
+  $display->layout = 'omega_12_twocol_6_6_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'left' => NULL,
       'right' => NULL,
+      'top' => NULL,
+      'bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -3468,28 +3470,6 @@ search/ting
     $pane = new stdClass;
     $pane->pid = 'new-1';
     $pane->panel = 'left';
-    $pane->type = 'page_tabs';
-    $pane->subtype = 'page_tabs';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'type' => 'primary',
-      'id' => 'tabs',
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $display->content['new-1'] = $pane;
-    $display->panels['left'][0] = 'new-1';
-    $pane = new stdClass;
-    $pane->pid = 'new-2';
-    $pane->panel = 'right';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
@@ -3507,11 +3487,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-2'] = $pane;
-    $display->panels['right'][0] = 'new-2';
+    $display->content['new-1'] = $pane;
+    $display->panels['left'][0] = 'new-1';
     $pane = new stdClass;
-    $pane->pid = 'new-3';
-    $pane->panel = 'right';
+    $pane->pid = 'new-2';
+    $pane->panel = 'left';
     $pane->type = 'form';
     $pane->subtype = 'form';
     $pane->shown = TRUE;
@@ -3528,10 +3508,32 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
+    $display->content['new-2'] = $pane;
+    $display->panels['left'][1] = 'new-2';
+    $pane = new stdClass;
+    $pane->pid = 'new-3';
+    $pane->panel = 'top';
+    $pane->type = 'page_tabs';
+    $pane->subtype = 'page_tabs';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'type' => 'primary',
+      'id' => 'tabs',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
     $display->content['new-3'] = $pane;
-    $display->panels['right'][1] = 'new-3';
+    $display->panels['top'][0] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-1';
+  $display->title_pane = 'new-3';
   $handler->conf['display'] = $display;
   $export['user_edit_panel_context_oc'] = $handler;
 
@@ -3553,13 +3555,15 @@ search/ting
     'relationships' => array(),
   );
   $display = new panels_display;
-  $display->layout = 'twocol';
+  $display->layout = 'omega_12_twocol_6_6_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'left' => NULL,
       'right' => NULL,
+      'top' => NULL,
+      'bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -3591,6 +3595,27 @@ search/ting
     $pane = new stdClass;
     $pane->pid = 'new-2';
     $pane->panel = 'right';
+    $pane->type = 'user_profile';
+    $pane->subtype = 'user_profile';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_entity_id:user_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $display->content['new-2'] = $pane;
+    $display->panels['right'][0] = 'new-2';
+    $pane = new stdClass;
+    $pane->pid = 'new-3';
+    $pane->panel = 'top';
     $pane->type = 'page_tabs';
     $pane->subtype = 'page_tabs';
     $pane->shown = TRUE;
@@ -3608,29 +3633,8 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-2'] = $pane;
-    $display->panels['right'][0] = 'new-2';
-    $pane = new stdClass;
-    $pane->pid = 'new-3';
-    $pane->panel = 'right';
-    $pane->type = 'user_profile';
-    $pane->subtype = 'user_profile';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => 'argument_entity_id:user_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
     $display->content['new-3'] = $pane;
-    $display->panels['right'][1] = 'new-3';
+    $display->panels['top'][0] = 'new-3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

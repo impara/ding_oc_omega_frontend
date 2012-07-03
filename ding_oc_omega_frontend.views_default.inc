@@ -35,7 +35,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Felt: Indhold: List image */
+  /* Field: Content: List image */
   $handler->display->display_options['fields']['field_list_image']['id'] = 'field_list_image';
   $handler->display->display_options['fields']['field_list_image']['table'] = 'field_data_field_list_image';
   $handler->display->display_options['fields']['field_list_image']['field'] = 'field_list_image';
@@ -63,7 +63,7 @@ function ding_oc_omega_frontend_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_list_image']['field_api_classes'] = 0;
-  /* Felt: Felt: Library */
+  /* Field: Field: Library */
   $handler->display->display_options['fields']['group_audience']['id'] = 'group_audience';
   $handler->display->display_options['fields']['group_audience']['table'] = 'field_data_group_audience';
   $handler->display->display_options['fields']['group_audience']['field'] = 'group_audience';
@@ -89,7 +89,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['group_audience']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['group_audience']['click_sort_column'] = 'gid';
   $handler->display->display_options['fields']['group_audience']['field_api_classes'] = 0;
-  /* Felt: Content revision: Updated date */
+  /* Field: Content revision: Updated date */
   $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['table'] = 'node_revision';
   $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
@@ -114,7 +114,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['timestamp']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['timestamp']['date_format'] = 'custom';
   $handler->display->display_options['fields']['timestamp']['custom_date_format'] = 'd. F Y';
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -141,7 +141,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['field_ding_body']['id'] = 'field_ding_body';
   $handler->display->display_options['fields']['field_ding_body']['table'] = 'field_data_field_ding_body';
   $handler->display->display_options['fields']['field_ding_body']['field'] = 'field_ding_body';
@@ -168,12 +168,12 @@ function ding_oc_omega_frontend_views_default_views() {
     'trim_length' => '200',
   );
   $handler->display->display_options['fields']['field_ding_body']['field_api_classes'] = 0;
-  /* Sort criterion: Indhold: Post date */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Felt: Library (group_audience:nid) */
+  /* Contextual filter: Field: Library (group_audience:nid) */
   $handler->display->display_options['arguments']['ding_library_nid']['id'] = 'ding_library_nid';
   $handler->display->display_options['arguments']['ding_library_nid']['table'] = 'field_data_group_audience';
   $handler->display->display_options['arguments']['ding_library_nid']['field'] = 'ding_library_nid';
@@ -186,7 +186,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['arguments']['ding_library_nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['ding_library_nid']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['ding_library_nid']['not'] = 0;
-  /* Contextual filter: Indhold: Has taxonomy term ID */
+  /* Contextual filter: Content: Has taxonomy term ID */
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
@@ -200,21 +200,21 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['arguments']['tid']['require_value'] = 0;
   $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['arguments']['tid']['set_breadcrumb'] = 0;
-  /* Filter criterion: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'ding_news' => 'ding_news',
   );
-  /* Filter criterion: Oversættelse af indhold: Sprog */
+  /* Filter criterion: Content translation: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
   $handler->display->display_options['filters']['language']['field'] = 'language';
@@ -243,7 +243,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Indhold: List image */
+  /* Field: Content: List image */
   $handler->display->display_options['fields']['field_list_image']['id'] = 'field_list_image';
   $handler->display->display_options['fields']['field_list_image']['table'] = 'field_data_field_list_image';
   $handler->display->display_options['fields']['field_list_image']['field'] = 'field_list_image';
@@ -271,7 +271,7 @@ function ding_oc_omega_frontend_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_list_image']['field_api_classes'] = 0;
-  /* Felt: Indhold: All taxonomy terms */
+  /* Field: Content: All taxonomy terms */
   $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
@@ -301,7 +301,7 @@ function ding_oc_omega_frontend_views_default_views() {
     'category' => 'category',
     'ding_content_tags' => 0,
   );
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -328,7 +328,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Felt: Felt: Library */
+  /* Field: Field: Library */
   $handler->display->display_options['fields']['group_audience']['id'] = 'group_audience';
   $handler->display->display_options['fields']['group_audience']['table'] = 'field_data_group_audience';
   $handler->display->display_options['fields']['group_audience']['field'] = 'group_audience';
@@ -354,7 +354,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['group_audience']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['group_audience']['click_sort_column'] = 'gid';
   $handler->display->display_options['fields']['group_audience']['field_api_classes'] = 0;
-  /* Felt: Content revision: Updated date */
+  /* Field: Content revision: Updated date */
   $handler->display->display_options['fields']['timestamp_1']['id'] = 'timestamp_1';
   $handler->display->display_options['fields']['timestamp_1']['table'] = 'node_revision';
   $handler->display->display_options['fields']['timestamp_1']['field'] = 'timestamp';
@@ -377,7 +377,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['timestamp_1']['empty_zero'] = 0;
   $handler->display->display_options['fields']['timestamp_1']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['timestamp_1']['date_format'] = 'date_only';
-  /* Felt: Indhold: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['field_ding_body']['id'] = 'field_ding_body';
   $handler->display->display_options['fields']['field_ding_body']['table'] = 'field_data_field_ding_body';
   $handler->display->display_options['fields']['field_ding_body']['field'] = 'field_ding_body';
@@ -405,38 +405,38 @@ function ding_oc_omega_frontend_views_default_views() {
   );
   $handler->display->display_options['fields']['field_ding_body']['field_api_classes'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indhold: Sticky */
+  /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
-  /* Sort criterion: Indhold: Post date */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'ding_news' => 'ding_news',
   );
-  /* Filter criterion: Indhold: Forfremmet til forside */
+  /* Filter criterion: Content: Promoted to front page */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
-  /* Filter criterion: Oversættelse af indhold: Sprog */
+  /* Filter criterion: Content translation: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
   $handler->display->display_options['filters']['language']['field'] = 'language';
@@ -480,7 +480,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['empty']['area']['format'] = 'ding_wysiwyg';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Felt: Felt: Library */
+  /* Field: Field: Library */
   $handler->display->display_options['fields']['group_audience']['id'] = 'group_audience';
   $handler->display->display_options['fields']['group_audience']['table'] = 'field_data_group_audience';
   $handler->display->display_options['fields']['group_audience']['field'] = 'group_audience';
@@ -506,7 +506,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['group_audience']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['group_audience']['click_sort_column'] = 'gid';
   $handler->display->display_options['fields']['group_audience']['field_api_classes'] = 0;
-  /* Felt: Content revision: Updated date */
+  /* Field: Content revision: Updated date */
   $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['table'] = 'node_revision';
   $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
@@ -531,7 +531,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['timestamp']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['timestamp']['date_format'] = 'custom';
   $handler->display->display_options['fields']['timestamp']['custom_date_format'] = 'd. F Y';
-  /* Felt: Indhold: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -559,18 +559,18 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indhold: Sticky */
+  /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
-  /* Sort criterion: Indhold: Post date */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Felt: Library (group_audience:nid) */
+  /* Contextual filter: Field: Library (group_audience:nid) */
   $handler->display->display_options['arguments']['ding_library_nid']['id'] = 'ding_library_nid';
   $handler->display->display_options['arguments']['ding_library_nid']['table'] = 'field_data_group_audience';
   $handler->display->display_options['arguments']['ding_library_nid']['field'] = 'ding_library_nid';
@@ -583,21 +583,21 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['arguments']['ding_library_nid']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['ding_library_nid']['not'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'ding_news' => 'ding_news',
   );
-  /* Filter criterion: Oversættelse af indhold: Sprog */
+  /* Filter criterion: Content translation: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
   $handler->display->display_options['filters']['language']['field'] = 'language';
@@ -615,7 +615,7 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Felt: Library (group_audience:nid) */
+  /* Contextual filter: Field: Library (group_audience:nid) */
   $handler->display->display_options['arguments']['ding_library_nid']['id'] = 'ding_library_nid';
   $handler->display->display_options['arguments']['ding_library_nid']['table'] = 'field_data_group_audience';
   $handler->display->display_options['arguments']['ding_library_nid']['field'] = 'ding_library_nid';
@@ -654,33 +654,33 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['row_options']['comments'] = 0;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indhold: Sticky */
+  /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
-  /* Sort criterion: Indhold: Post date */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'ding_news' => 'ding_news',
   );
-  /* Filter criterion: Oversættelse af indhold: Sprog */
+  /* Filter criterion: Content translation: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
   $handler->display->display_options['filters']['language']['field'] = 'language';
@@ -688,7 +688,7 @@ function ding_oc_omega_frontend_views_default_views() {
     '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
     'und' => 'und',
   );
-  /* Filter criterion: Indhold: Forfremmet til forside */
+  /* Filter criterion: Content: Promoted to front page */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
@@ -718,18 +718,18 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['row_options']['comments'] = 0;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indhold: Sticky */
+  /* Sort criterion: Content: Sticky */
   $handler->display->display_options['sorts']['sticky']['id'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['table'] = 'node';
   $handler->display->display_options['sorts']['sticky']['field'] = 'sticky';
   $handler->display->display_options['sorts']['sticky']['order'] = 'DESC';
-  /* Sort criterion: Indhold: Post date */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Felt: Library (group_audience:nid) */
+  /* Contextual filter: Field: Library (group_audience:nid) */
   $handler->display->display_options['arguments']['ding_library_nid']['id'] = 'ding_library_nid';
   $handler->display->display_options['arguments']['ding_library_nid']['table'] = 'field_data_group_audience';
   $handler->display->display_options['arguments']['ding_library_nid']['field'] = 'ding_library_nid';
@@ -741,21 +741,21 @@ function ding_oc_omega_frontend_views_default_views() {
   $handler->display->display_options['arguments']['ding_library_nid']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['ding_library_nid']['not'] = 0;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indhold: Udgivet */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Indhold: Type */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'ding_news' => 'ding_news',
   );
-  /* Filter criterion: Oversættelse af indhold: Sprog */
+  /* Filter criterion: Content translation: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
   $handler->display->display_options['filters']['language']['table'] = 'node';
   $handler->display->display_options['filters']['language']['field'] = 'language';
@@ -807,7 +807,7 @@ function ding_oc_omega_frontend_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Alle'),
+    t('All'),
     t('Front page teaser list'),
     t('more'),
     t('Dummy if non'),
